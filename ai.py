@@ -7,14 +7,10 @@ import requests
 import streamlit as st
 from dotenv import load_dotenv
 
-load_dotenv()
+AMAZON_RAPIDAPI_KEY = "eed1eb9a41msh4b52a1c92cdca8cp1f1142jsn137cd6d55801"
 
-AMAZON_RAPIDAPI_KEY = os.getenv(
-    "AMAZON_RAPIDAPI_KEY", "eed1eb9a41msh4b52a1c92cdca8cp1f1142jsn137cd6d55801"
-)
-GOOGLE_RAPIDAPI_KEY = os.getenv(
-    "GOOGLE_RAPIDAPI_KEY", "53ab7bc106mshab922e7e38938a8p1e6d0ejsn2d4534d61481"
-)
+GOOGLE_RAPIDAPI_KEY =  "53ab7bc106mshab922e7e38938a8p1e6d0ejsn2d4534d61481"
+
 
 AMAZON_HOST = "real-time-amazon-data.p.rapidapi.com"
 GOOGLE_HOST = "google-search74.p.rapidapi.com"
